@@ -70,6 +70,8 @@ span{
     display: inline-block;
     text-align: justify;
     text-wrap: wrap;
+justify-content:space-evenly;
+
 }
 @keyframes typing{
     0%{
