@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+.first-line{
+    display: flex;
+}
+p, span{
+    font-family: "sacramento";
+    font-size: 3.2em;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    color: red;
+    text-shadow: .03em .03em 0 rgba(254,59,151,.7);
+    display: contents;
+    font-weight: bolder;
+    overflow: hidden;
+    font-style: italic;
+    padding-right: 10px;
+}
+span{
+    color: #000;
+}
+.heart{
+    width: 100px;
+    height: 90px;
+    animation: heartbeat 1s infinite;
+    transform: scale(1);
+}
+.heart:before,
+.heart::after{
+    position: absolute;
+    content: "";
+    left:50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform:rotate(-45deg);
+    transform-origin: 0 100%;
+}
+.heart:after{
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+@keyframes heartbeat {
+    0%{
+        transform: scale(.75);
+    }
+    20%{
+        transform: scale(1);
+    }
+    40%{
+        transform: scale(.75);
+    }
+    60%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(.75);
+    }
+    100%{
+        transform: scale(.75);
+    }
+}
+.typing{
+    display: inline-block;
+    text-align: justify;
+    text-wrap: wrap;
+}
+@keyframes typing{
+    0%{
+        width: 0;
+        border-right:.06em solid #000;
+    }
+    99%{
+        border-right: .06em solid #000;
+    }
+    100%{
+        border-right: 0;
+    }
+}
+.typing{
+    animation: typing 1.7s steps(28,end);
+}
+.container{
+  min-height: 80vh;
+  padding: 20px;
+}
+body{
+    background-color: pink;
+  padding: 0;
+  margin: 0;
+}
+.gallery{display: flex; gap: 1rem;}
+.gallery>div{
+    flex: 1; overflow: hidden;
+    border-radius: 1rem;
+}
+img{width: 100%;transition: ease-in-out 1s;
+     border-radius: 2rem; 
+     border-width: 2rem;
+     border-color: red;
+    }
+img:hover{
+    transform: scale(0.5) rotate(5deg);
+}
+
+.jx{
+    width:auto;
+    height: auto;
+}
+.de{
+    background:linear-gradient(
+        to top,
+        pink,
+         rgb(252, 36, 36),
+         red,
+         rgb(135, 28, 28)
+    ) ;
+    padding: 20px;
+    color:gold;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    opacity: 50%;
+    font-size: 30px;
+    font-weight: bolder;
+}
+h1{
+    text-align: center;
+    padding: auto;
+    font-family: 'Pacifico',cursive;
+    color: red;
+}
+.rose{
+    position: relative;
+    width: 100px;
+    height: 150px;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    background-color: red;
+    transform: rotate(-45deg);
+}
+.rose:before, .rose:after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+}
+.rose:before{
+    top: -30px;
+    left: 20px;
+}
+.rose:after{
+    top: 10px;
+    left: 30px;
+}
+.cv{
+    color: gold;
+    font-weight: 100px;
+    font-size: larger;
+}
+.bg{
+    font-size: medium;
+    background-color: rgb(20, 20, 254);
+    color: white;
+    border: bold gold;
+    border-radius: 2px;
+    cursor:progress;
+    border-width: 2px;
+    padding: 5px;
+    content: none;
+    shape-margin: 50px;
+    align-items: center;
+}
+.gh{
+    font-size: medium;
+    background-color: rgb(249, 6, 6);
+    color: white;
+    border: bold gold;
+    border-radius: 2px 2px 2px;
+    cursor:pointer;
+    border-width: 2px;
+    padding: 5px;
+    content: none;
+    shape-margin: 50px;
+    align-items: center;
+
+}

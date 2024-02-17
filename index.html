@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess can you.</title>
+    <link rel="stylesheet" href="eze.css">
+</head>
+<body>
+    <div class="container">
+    <center><h2 >COME IN </h2></center>
+    <p>May I steal a moment of your time to embark on a journey of conversation with you?</p>
+    <form  class="passform" action="mylove.html" onsubmit="return passcheck()">
+    <input type="text" id="pass2" required placeholder="Username">
+    <input type="password" id="pass1" required placeholder="Password">
+    <input type="submit" value="Come in">
+</form>
+</div>
+    <script>
+       var username="Dora Love"; 
+       var password="Nick'sgf";
+function
+ passcheck(){
+    if (document.getElementById('pass1').value !=password){
+        alert('wrong password');
+        return false;
+    }
+    if (document.getElementById('pass1').value ==password){
+        alert('My sweet melody and beloved say ok');
+    }
+    if(document.getElementById('pass2').value !=username){
+        alert('invaild username');
+        return false;
+    }
+    if(documet.getElementById('pass2').value==username){
+        alert('correct username')
+    }
+}
+    </script>
+</body>
+</html>
