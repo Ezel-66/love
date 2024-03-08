@@ -139,31 +139,7 @@ h1{
     padding: auto;
     font-family: 'Pacifico',cursive;
     color: red;
-}
-.rose{
-    position: relative;
-    width: 100px;
-    height: 150px;
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    background-color: red;
-    transform: rotate(-45deg);
-}
-.rose:before, .rose:after{
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-color: red;
-    border-radius: 50%;
-}
-.rose:before{
-    top: -30px;
-    left: 20px;
-}
-.rose:after{
-    top: 10px;
-    left: 30px;
-}
+}
 .cv{
     color: gold;
     font-weight: 100px;
